@@ -2,72 +2,109 @@
 <html lang="bn">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>গরিবদের দান করি</title>
 
 <meta property="og:title" content="গরিবদের দান করি ❤️">
-<meta property="og:description" content="যে যেমন পারে, সেই রকম দান করি 🤲 মানবতার পাশে থাকি ❤️">
-<meta property="og:image" content="https://i.ibb.co/8XGQYwK/donation.jpg">
+<meta property="og:description" content="মানবতার পাশে থাকুন 🤲 ইসলামিক দৃষ্টিতে দান হলো সবচেয়ে বড় ইবাদত ❤️">
 
 <style>
+
+/* 🌈 ANIMATED BACKGROUND */
 body{
   margin:0;
   font-family: Arial, sans-serif;
-
-  /* ✅ BACKGROUND IMAGE (working direct link) */
-  background: url("https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1400&q=80")
-  no-repeat center center fixed;
-  background-size: cover;
-
   color:white;
   text-align:center;
-  padding:20px;
+  overflow:hidden;
 }
 
-/* dark overlay */
+/* moving gradient background */
 body::before{
   content:"";
   position:fixed;
-  top:0;left:0;
+  top:0;
+  left:0;
   width:100%;
   height:100%;
-  background:rgba(0,0,0,0.6);
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #000000);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  z-index:-2;
+}
+
+@keyframes gradientMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* dark overlay */
+body::after{
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
   z-index:-1;
 }
 
+/* box */
 .container{
-  margin-top:40px;
-}
-
-img{
-  width:280px;
-  border-radius:15px;
-  margin-top:15px;
-
-  /* এটা নিশ্চিত করে image show হবে */
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  padding:20px;
 }
 
 .box{
-  background:rgba(0,0,0,0.5);
+  max-width:400px;
+  background:rgba(0,0,0,0.6);
   padding:20px;
-  margin-top:20px;
   border-radius:15px;
-  max-width:500px;
-  margin:auto;
+  box-shadow:0 0 20px rgba(0,0,0,0.5);
 }
 
+/* title */
+h1{
+  font-size:30px;
+  margin-bottom:10px;
+  color:#fff;
+}
+
+/* text */
+p{
+  font-size:14px;
+  line-height:1.6;
+  margin:6px 0;
+}
+
+/* button */
 a{
   display:inline-block;
   margin-top:15px;
-  padding:12px 25px;
-  background:white;
+  padding:14px 28px;
+  background:gold;
   color:black;
   text-decoration:none;
-  border-radius:10px;
+  border-radius:30px;
   font-weight:bold;
+  font-size:16px;
+  animation:pulse 1.5s infinite;
+  box-shadow:0 0 10px gold;
 }
+
+/* button animation */
+@keyframes pulse{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.08);}
+  100%{transform:scale(1);}
+}
+
 </style>
 </head>
 
@@ -75,21 +112,20 @@ a{
 
 <div class="container">
 
-<h1>গরিবদের দান করি ❤️</h1>
-<p>গরিবদের পাশে থাকি 🤲</p>
-
-<!-- ✅ MAIN IMAGE (fixed working link) -->
-<img src="https://images.unsplash.com/photo-1600180758890-6a13c1f6f9e2?auto=format&fit=crop&w=800&q=80" alt="donation">
-
 <div class="box">
 
-<p>✨ যে যেমন পারে, সেই রকম দান করি</p>
-<p>🤲 মানবতার সেবাই সবচেয়ে বড় কাজ</p>
-<p>❤️ ছোট্ট একটি সাহায্য কারো জীবন বদলে দিতে পারে</p>
-<p>🌍 সবাই মিলে গরিবদের পাশে দাঁড়াই</p>
+<h1>গরিবদের দান করি ❤️</h1>
 
-<!-- 🔗 তোমার লিংক -->
-<a href="https://rupantorpay.com/paymentlink/eyJ1aWQiOiIyODQ1IiwiYnJhbmRfaWQiOiIzMDA1In0">দান করুন</a>
+<p>🤲 ইসলামিক দৃষ্টিতে দান হলো সবচেয়ে বড় ইবাদত</p>
+<p>✨ আল্লাহ বলেন, দান করলে সম্পদ কমে না বরং বাড়ে</p>
+<p>🌍 মানবতার সেবাই জান্নাতের পথ হতে পারে</p>
+<p>❤️ ক্ষুধার্তকে খাওয়ানো সবচেয়ে বড় নেক কাজ</p>
+<p>🙏 একটি সাহায্য কারো জীবন বদলে দিতে পারে</p>
+<p>💖 দান করলে আল্লাহ খুশি হন</p>
+<p>🤍 গরিবদের পাশে দাঁড়ানো আমাদের দায়িত্ব</p>
+<p>🕌 আজকের দান হতে পারে আপনার আখিরাতের সঞ্চয়</p>
+
+<a href="https://rupantorpay.com/paymentlink/eyJ1aWQiOiIyODQ1IiwiYnJhbmRfaWQiOiIzMDA1In0">দান করুন এখনই</a>
 
 </div>
 
