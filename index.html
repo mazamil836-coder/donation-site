@@ -14,10 +14,26 @@
     body{
       margin:0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #ff9966, #ff5e62);
+
+      /* 👉 BACKGROUND IMAGE এখানে বসবে */
+      background: url("https://kommodo.ai/i/VqmnqEM8nXJq4SwUQ3fU") no-repeat center center fixed;
+      background-size: cover;
+
       color: white;
       text-align: center;
       padding: 20px;
+    }
+
+    /* dark overlay for better text visibility */
+    body::before{
+      content:"";
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: rgba(0,0,0,0.5);
+      z-index:-1;
     }
 
     .container{
@@ -32,22 +48,13 @@
     }
 
     .box{
-      background: rgba(0,0,0,0.4);
+      background: rgba(0,0,0,0.5);
       padding: 20px;
       margin-top: 20px;
       border-radius: 15px;
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
-    }
-
-    h1{
-      font-size: 32px;
-    }
-
-    p{
-      font-size: 16px;
-      line-height: 1.6;
     }
 
     a{
@@ -59,12 +66,6 @@
       text-decoration:none;
       border-radius:10px;
       font-weight:bold;
-      transition: 0.3s;
-    }
-
-    a:hover{
-      background: #222;
-      color: white;
     }
   </style>
 </head>
@@ -77,23 +78,18 @@
 
   <p>গরিবদের পাশে থাকি 🤲</p>
 
-  <img src="https://i.ibb.co/8XGQYwK/donation.jpg" alt="donation">
+  <!-- 👉 MAIN IMAGE এখানে বসবে -->
+  <img src="https://kommodo.ai/i/VNM1ho3iCs6hFZNsRSd5">
 
   <div class="box">
 
     <p>✨ যে যেমন পারে, সেই রকম দান করি</p>
-
     <p>🤲 মানবতার সেবাই সবচেয়ে বড় কাজ</p>
-
     <p>❤️ আপনার ছোট্ট একটি সাহায্য কারো মুখে হাসি এনে দিতে পারে</p>
-
-    <p>🌍 সবাই মিলে একসাথে গরিবদের পাশে দাঁড়াই</p>
-
+    <p>🌍 সবাই মিলে গরিবদের পাশে দাঁড়াই</p>
     <p>💖 দান ছোট হোক বা বড়—নিয়তটাই আসল</p>
-
     <p>🙏 আল্লাহ সবাইকে সাহায্য করার তৌফিক দান করুন</p>
 
-    <!-- তোমার আসল লিংক -->
     <a href="https://rupantorpay.com/paymentlink/eyJ1aWQiOiIyODQ1IiwiYnJhbmRfaWQiOiIzMDA1In0">দান করুন এখানে</a>
 
   </div>
