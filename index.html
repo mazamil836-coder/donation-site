@@ -11,10 +11,11 @@
 <style>
 body{
   margin:0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 
-  /* ✅ BACKGROUND IMAGE (আগেই বসানো) */
-  background: url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c") no-repeat center center fixed;
+  /* ✅ BACKGROUND IMAGE (working direct link) */
+  background: url("https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1400&q=80")
+  no-repeat center center fixed;
   background-size: cover;
 
   color:white;
@@ -33,11 +34,19 @@ body::before{
   z-index:-1;
 }
 
+.container{
+  margin-top:40px;
+}
+
 img{
-  width:260px;
+  width:280px;
   border-radius:15px;
   margin-top:15px;
-  box-shadow:0 0 15px rgba(0,0,0,0.4);
+
+  /* এটা নিশ্চিত করে image show হবে */
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .box{
@@ -64,21 +73,25 @@ a{
 
 <body>
 
+<div class="container">
+
 <h1>গরিবদের দান করি ❤️</h1>
 <p>গরিবদের পাশে থাকি 🤲</p>
 
-<!-- ✅ MAIN IMAGE (আগেই বসানো) -->
-<img src="https://i.ibb.co/8XGQYwK/donation.jpg">
+<!-- ✅ MAIN IMAGE (fixed working link) -->
+<img src="https://i.ibb.co/8XGQYwK/donation.jpg" alt="donation">
 
 <div class="box">
 
 <p>✨ যে যেমন পারে, সেই রকম দান করি</p>
 <p>🤲 মানবতার সেবাই সবচেয়ে বড় কাজ</p>
-<p>❤️ আপনার ছোট্ট একটি সাহায্য কারো মুখে হাসি এনে দিতে পারে</p>
+<p>❤️ ছোট্ট একটি সাহায্য কারো জীবন বদলে দিতে পারে</p>
 <p>🌍 সবাই মিলে গরিবদের পাশে দাঁড়াই</p>
 
-<!-- 🔗 তোমার লিংক এখানে বসাবে -->
+<!-- 🔗 তোমার লিংক -->
 <a href="https://rupantorpay.com/paymentlink/eyJ1aWQiOiIyODQ1IiwiYnJhbmRfaWQiOiIzMDA1In0">দান করুন</a>
+
+</div>
 
 </div>
 
